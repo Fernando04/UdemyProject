@@ -9,7 +9,7 @@ public class ClaseExcepciones {
     public static void main(String[] args) {
         int[] arrayNum = {1, 2, 3, 4, 5, 2, 3, 4, 5, 4, 3, 1, 3, 2, 5,11};
         int[] frecuencia = new int[6];
-
+    //No entra al catch
        /* for ( int respuesta : arrayNum) {
             try {
                 frecuencia[arrayNum[respuesta]] += 1;

@@ -1,15 +1,14 @@
-package sviiarreglos;
+package sviiarreglos.arcoiris;
 
 import javax.swing.JPanel;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
 
 public class DibujoArcoiris extends JPanel {
-
+    //Arreglo de colores para construir un arcoiris
     private final static Color Violeta = new Color(128, 0, 128);
     private final static Color Indigo = new Color(75, 0, 130);
-
-    private Color[] colores = {Color.white, Violeta, Indigo, Color.BLUE, Color.green, Color.orange, Color.RED};
-
+    private final Color[] colores = {Color.WHITE, Violeta, Indigo, Color.BLUE, Color.GREEN, Color.ORANGE, Color.RED};
     public DibujoArcoiris() {
         setBackground(Color.WHITE);
     }
@@ -30,9 +29,7 @@ public class DibujoArcoiris extends JPanel {
             int alto = indice * radio * 2;
 
             g.fillArc(valorX, valorY, ancho, alto, 0, 180);
+
         }
-
     }
-
-
 }
